@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package autocomp.messaging;
+
+/**
+ * Message sent before any file is sent. This gives the receiver the information
+ * it needs to calculate the number of chuncks it is going to receive
+ */
+message FileInitialMessage
+{
+  required string filename = 1;   //!< Name of the next file to be sent
+  required uint64 fileSize = 2;   //!< Original size of the file
+  required uint32 chunkSize = 3;  //!< Size of each uncompressed chunk of the
+                                  //!< file
+  optional bool lastFile = 4;     //!< Is this the last file I am receiving?
+}

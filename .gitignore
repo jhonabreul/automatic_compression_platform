@@ -1,0 +1,11 @@
+build
+bin/*
+!bin/.gitkeep
+log/*
+!log/.gitkeep
+*.pb.h*
+*.pb.cc*
+test/test_output_dir/*
+!test/test_output_dir/.gitkeep
+doc/doxygen/*
+!doc/doxygen/.gitkeep

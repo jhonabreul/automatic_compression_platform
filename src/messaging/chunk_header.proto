@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "messaging/compressor.proto";
+
+package autocomp.messaging;
+
+/**
+ * Header for each sent chunk
+ */
+message ChunkHeader
+{
+  required Compressor compressor = 1; //!< Compressor used for compression
+                                      //!< (or not)
+  required uint64 chunkPosition = 2;  //!< Position of the chunk in the file
+
+  optional bool lastChunk = 3;
+}

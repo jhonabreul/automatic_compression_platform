@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "messaging/compressor.proto";
+import "messaging/file_request_mode.proto";
+
+package autocomp.messaging;
+
+/**
+ * File request message
+ */
+message FileTransmissionRequest
+{
+  required string filename = 1;       	//!< File to download
+  required FileRequestMode mode = 2;
+  optional Compressor compressor = 3; 	//!< Compressor to use
+  optional uint32 compressionLevel = 4; //!< Compression level
+}

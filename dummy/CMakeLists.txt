@@ -1,0 +1,2 @@
+add_subdirectory(gtest_test)
+add_subdirectory(protobuf_test)

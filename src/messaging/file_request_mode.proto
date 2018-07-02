@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package autocomp;
+
+/**
+ * File Request Mode
+ */
+enum FileRequestMode
+{
+  NO_COMPRESSION = 0;
+  AUTOCOMP = 1;
+  COMPRESS = 2;
+  PRE_COMPRESS = 3;
+  TRAIN = 4;
+}

@@ -1,0 +1,12 @@
+[submodule "external/googletest"]
+	path = external/googletest
+	url = https://github.com/google/googletest.git
+[submodule "external/snappy"]
+	path = external/snappy
+	url = https://github.com/google/snappy.git
+[submodule "external/g3log"]
+	path = external/g3log
+	url = https://github.com/KjellKod/g3log.git
+[submodule "external/wondershaper"]
+	path = external/wondershaper
+	url = https://github.com/magnific0/wondershaper.git

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package autocomp.messaging;
+
+/**
+ * File request message
+ */
+message ErrorMessage
+{
+  required string message = 1;
+}

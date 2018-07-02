@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package autocomp;
+
+/**
+ * Compressor type
+ */
+enum Compressor
+{
+  ZLIB = 0;   //!< Zlib compressor
+  SNAPPY = 1; //!< Google's Snappy compressor
+  LZO = 2;    //!< LZO compressor
+  BZIP2 = 3;  //!< Bzip2 compressor
+  LZMA = 4;   //!< LZMA compressor
+  FPC = 5;    //!< Martin Burstcher's FPC compressor for floating point data
+  COPY = 6;   //!< No compression
+}

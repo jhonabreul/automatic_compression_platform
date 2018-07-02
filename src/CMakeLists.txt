@@ -1,0 +1,7 @@
+add_subdirectory(messaging)
+add_subdirectory(utils)
+add_subdirectory(io)
+add_subdirectory(monitors)
+add_subdirectory(compression)
+add_subdirectory(network)
+add_subdirectory(tools)
